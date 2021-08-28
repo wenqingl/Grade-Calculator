@@ -1,0 +1,81 @@
+body{
+    background-color: rgba(169,24,42,255);
+    margin-top:0px;
+}
+
+.mainContent{
+    background-color: rgba(255,255,255,255);
+    width:90%;
+    margin:auto;
+    margin-bottom: 100px;
+
+    border-top: 25px rgba(59,55,52,255) solid;
+    border-bottom: 25px rgba(59,55,52,255) solid;
+
+    padding-top: 50px;
+    padding-left: 25px;
+}
+
+.gradeForm{
+    width: 70%;
+    background-color: rgba(233,239,241,255);
+    padding: 20px;
+    margin-bottom: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align:left;
+}
+
+table,tr,td{
+    border:2px solid rgba(202,203,204,255);
+}
+
+table,tr,th{
+    border:2px solid rgba(202,203,204,255);
+}
+
+th{
+    background-color: rgba(221,221,221,255);
+    height:30px;
+    width:20%;
+    padding:10px;
+}
+
+td{
+    padding:10px;
+}
+
+h1{
+    font-family:Helvetica, Arial, sans-serif;
+}
+
+h2{
+    color: RGB(184,19,20,255);
+}
+
+h3{
+    color: RGB(184,19,20,255);
+}
+
+input{
+    width: 50%;
+    height: 30px;
+    border: 2px solid rgba(221,224,225,255);
+    margin: 5px;
+}
+
+.calculate{
+    font-size: medium;
+    color: white;
+    background-color: rgba(184,16,19,255);
+    width:12%;
+    height:50px;
+}
+
+#WEIGHTED{
+    margin-left: 70%;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheets/calculator.css">
+    <title>CourSys - Formula Tester</title>
+</head>
+
+<body>
+
+    <div class="mainContent">
+        <h1>Grade Calculator</h1>
+        <div class="gradeForm">
+            <h2>Activities</h2>
+            <p>Give grades to the numeric activities:</p>
+
+            <form action="/process_form" method="POST">
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Short Name</th>
+                        <th>Weight</th>
+                        <th>Grade</th>
+                        <th>Percent</th>
+                    </tr>
+                    <tr>
+                        <td>Activity 1</td>
+                        <td>A1</td>
+                        <td><input type="text" id="weight1" /></td>
+                        <td>
+                            <input type="text" id="gradeGot1" oninput= "percentCalculator(this.id)"/>
+                            /
+                            <input type="text" id="gradeTotal1" oninput="percentCalculator(this.id)" />
+                        </td>
+                        <td id="percent1"></td>
+
+                    </tr>
+                    <tr>
+                        <td>Activity 2</td>
+                        <td>A2</td>
+                        <td><input type="text" id="weight2" /></td>
+                        <td>
+                            <input type="text" id="gradeGot2" oninput="percentCalculator(this.id)" />
+                            /
+                            <input type="text" id="gradeTotal2" oninput="percentCalculator(this.id)" />
+                        </td>
+                        <td id="percent2"></td>
+                    </tr>
+                    <tr>
+                        <td>Activity 3</td>
+                        <td>A3</td>
+                        <td><input type="text" id="weight3" /></td>
+                        <td>
+                            <input type="text" id="gradeGot3" oninput="percentCalculator(this.id)" />
+                            /
+                            <input type="text" id="gradeTotal3" oninput="percentCalculator(this.id)" />
+                        </td>
+                        <td id="percent3"></td>
+                    </tr>
+                    <tr>
+                        <td>Activity 4</td>
+                        <td>A4</td>
+                        <td><input type="text" id="weight4" /></td>
+                        <td>
+                            <input type="text" id="gradeGot4" oninput="percentCalculator(this.id)" />
+                            /
+                            <input type="text" id="gradeTotal4" oninput="percentCalculator(this.id)" />
+                        </td>
+                        <td id="percent4"></td>
+                    </tr>
+
+
+                </table>
+
+                <h3>Result</h3>
+                <p id="showWeighted"></p>
+                <p id="showMean"></p>
+
+                <input type="button"  value = "WEIGHTED" class="calculate" id="WEIGHTED" onclick="weightedCalculator()">
+                <input type="button" value = "MEAN" class="calculate" id="MEAN" onclick="meanCalculator()">
+                <input type="button" value="add a new row" id="newRow" onclick="addRow()">
+
+        </div>
+    </div>
+
+    </form>
+
+    <script type="text/javascript" src="./calculator.js"></script>
+</body>
+
+</html>
+
